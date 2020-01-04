@@ -53,6 +53,7 @@ export default {
         message: "自定义图标",
         icon: "like-o"
       });
+      this.$router.push("/about");
     },
     showPopup() {
       this.show = true;
