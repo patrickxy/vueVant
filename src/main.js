@@ -4,15 +4,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "amfe-flexible";
-import { Lazyload } from "vant";
-Vue.use(Lazyload);
-// import { Button } from "vant";
-// Vue.use(Button);
+import "./plugins/vant";
 
-import Vant from "vant";
-import "vant/lib/index.css";
-
-Vue.use(Vant);
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false;
 

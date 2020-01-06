@@ -16,8 +16,7 @@
       这是一段最多显示一行的文字，多余的内容会被省略
     </div>
 
-    <!-- 最多显示两行 -->
-    <div class="van-multi-ellipsis--l2">
+    <div class="van-multi-ellipsis--l2" style="font-size:14px;">
       这是一段最多显示两行的文字，多余的内容会被省略asfasdfasdf多余的内容会被省略asfasdfasdf
     </div>
     <h4>swiper</h4>
