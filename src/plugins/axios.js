@@ -3,6 +3,7 @@
 // import Vue from "vue";
 import axios from "axios";
 import store from "@/store";
+import { Toast } from "vant";
 import qs from "qs";
 // Full config:  https://github.com/axios/axios#request-config
 axios.defaults.baseURL = process.env.VUE_APP_baseUrl || "/";
@@ -35,6 +36,7 @@ _axios.interceptors.request.use(
     return config;
   },
   function(error) {
+    Toast.fail(error);
     // Do something with request error
     return Promise.reject(error);
   }
@@ -53,6 +55,7 @@ _axios.interceptors.response.use(
   },
   function(error) {
     // Do something with response error
+    Toast.fail("系统错误，请稍后再试");
     return Promise.reject(error);
   }
 );

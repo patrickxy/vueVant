@@ -45,6 +45,7 @@ export default {
   components: {},
   mounted() {
     this.$axios.get("mock");
+    this.$axios.get("asdf");
   },
   methods: {
     showLoading() {
